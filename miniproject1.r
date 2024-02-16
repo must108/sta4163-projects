@@ -1,6 +1,5 @@
 # Dataset 3: Mtcars: Written by Mustaeen Ahmed
 library(readxl)
-library(car)
 cars <- read_excel("M:/Users/Mustaeen/Downloads/Cars.xlsx")
 # read_excel is used to use dataset in visual studio code
 
