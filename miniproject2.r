@@ -22,6 +22,9 @@ print(normal_results)
 np_results <- kruskal.test(mpg ~ factor(cyl), data = dataset)
 print(np_results)
 
+crit_value <- qchisq(0.95, df = 2)
+print(crit_value)
+
 # Question 2
 print("Question 2:")
 
@@ -31,6 +34,9 @@ chisq_results <- chisq.test(counts, p = exp_probs)
 
 print(chisq_results)
 print(chisq_results$expected)
+
+crit_value_chisq <- qchisq(0.95, df = 2)
+print(crit_value_chisq)
 
 # Question 3
 print("Question 3")
