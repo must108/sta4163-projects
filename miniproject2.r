@@ -51,3 +51,8 @@ print(vaccine)
 ind_results <- chisq.test(vaccine)
 print(ind_results)
 print(ind_results$expected)
+
+crit_value_indep <- qchisq(0.95, df = 1)
+print(crit_value_indep)
+
+
