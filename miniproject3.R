@@ -1,3 +1,6 @@
+# STA4163 Mini-Project 3
+# Written by Mustaeen Ahmed
+
 library(readxl)
 
 bank <- read_excel("./bank.xlsx")
