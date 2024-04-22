@@ -27,7 +27,7 @@ plot(bank_model)
 print(shapiro.test(bank_model$residuals))
 # for part k
 
-new_val <- data.frame(Income = 56000)
+new_val <- data.frame(Income = 56)
 pred_val <- predict(bank_model, newdata = new_val)
 conf_pred_val <- predict(bank_model, newdata = new_val, interval = "confidence",
                          level = 0.95)
