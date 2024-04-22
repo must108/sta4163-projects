@@ -29,8 +29,17 @@ print(shapiro.test(bank_model$residuals))
 
 new_val <- data.frame(Income = 56000)
 pred_val <- predict(bank_model, newdata = new_val)
+conf_pred_val <- predict(bank_model, newdata = new_val, interval = "confidence",
+                         level = 0.95)
+pred_pred_val <- predict(bank_model, newdata = new_val, interval = "prediction",
+                         level = 0.95)
+
 print(pred_val)
+print(conf_pred_val)
+print(pred_pred_val)
+# for part n
 
 multi_model <- lm(Rating ~ Income + Age + Education, data = dataset)
 print(summary(multi_model))
 print(anova(multi_model))
+# for question 2
